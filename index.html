@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- HTML -->
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Registeration</h1>
+    <form action="#" id="msform" onsubmit="return validateForm(this)">
+
+      <center>
+        <h3>Fill in your Details</h3>
+        <form>
+
+          <legend>Biodata</legend>
+
+          <div class="contaier">
+
+            <div class="main-user-nfo">
+
+              <div class="user-input-box">
+                <label for="FirstName">First Name</label>
+                <input type="text" name="firstname" id="Enter first name" required>
+              </div>
+
+              <div class="user-input-box">
+                <label for="Phonenumber">Phone Number</label>
+                <input type="tel" name="phonenubmer" id="Enter phone number" required>
+              </div>
+
+              <div class="user-input-box">
+                <label for="email">Email Address</label>
+                <input type="email" name="firstname" id="Enter email address ">
+              </div>
+
+              <div class="user-input-box">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="Enter password" required>
+              </div>
+
+              <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                  <input type="radio" name="gender" id="male" required>
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female" required>
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="other" required>
+                  <label for="other">Other</label>
+                </div>
+              </div>
+
+              <button type="submit" id="login" onclick="return loginUser" value="Login" onclick="yes"
+                class="submit">Submit</button>
+
+        </form>
+  </div>
+
+
+  <div class="bubbles">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript">
+    const signUp = document.querySelector('msform');
+    signUp.addEventListener('click', () => {
+      console.log('Hey');
+    });
+    function validateForm(form) {
+      alert('Successful submittion');
+    }
+    msform.addEventListener('msform', function (e) {
+      e.preventDefault();
+    });
+
+    // function validateForm(form) {
+    //   form.action = "Successfully Submitted";
+    //   alert(form.action);
+    //   return false;
+    // }
+
+
+  </script>
+
+  </center>
+
+</body>
+
+</html>
